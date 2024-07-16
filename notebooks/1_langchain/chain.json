@@ -1,0 +1,518 @@
+{
+    "lc": 1,
+    "type": "constructor",
+    "id": [
+        "langchain",
+        "schema",
+        "runnable",
+        "RunnableSequence"
+    ],
+    "kwargs": {
+        "first": {
+            "lc": 1,
+            "type": "constructor",
+            "id": [
+                "langchain",
+                "prompts",
+                "chat",
+                "ChatPromptTemplate"
+            ],
+            "kwargs": {
+                "input_variables": [
+                    "name",
+                    "user_input"
+                ],
+                "messages": [
+                    {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "SystemMessagePromptTemplate"
+                        ],
+                        "kwargs": {
+                            "prompt": {
+                                "lc": 1,
+                                "type": "constructor",
+                                "id": [
+                                    "langchain",
+                                    "prompts",
+                                    "prompt",
+                                    "PromptTemplate"
+                                ],
+                                "kwargs": {
+                                    "input_variables": [
+                                        "name"
+                                    ],
+                                    "template": "You are a helpful AI bot. Your name is {name}.",
+                                    "template_format": "f-string"
+                                },
+                                "name": "PromptTemplate",
+                                "graph": {
+                                    "nodes": [
+                                        {
+                                            "id": 0,
+                                            "type": "schema",
+                                            "data": "PromptInput"
+                                        },
+                                        {
+                                            "id": 1,
+                                            "type": "runnable",
+                                            "data": {
+                                                "id": [
+                                                    "langchain",
+                                                    "prompts",
+                                                    "prompt",
+                                                    "PromptTemplate"
+                                                ],
+                                                "name": "PromptTemplate"
+                                            }
+                                        },
+                                        {
+                                            "id": 2,
+                                            "type": "schema",
+                                            "data": "PromptTemplateOutput"
+                                        }
+                                    ],
+                                    "edges": [
+                                        {
+                                            "source": 0,
+                                            "target": 1
+                                        },
+                                        {
+                                            "source": 1,
+                                            "target": 2
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "HumanMessagePromptTemplate"
+                        ],
+                        "kwargs": {
+                            "prompt": {
+                                "lc": 1,
+                                "type": "constructor",
+                                "id": [
+                                    "langchain",
+                                    "prompts",
+                                    "prompt",
+                                    "PromptTemplate"
+                                ],
+                                "kwargs": {
+                                    "input_variables": [],
+                                    "template": "Hello, how are you doing?",
+                                    "template_format": "f-string"
+                                },
+                                "name": "PromptTemplate",
+                                "graph": {
+                                    "nodes": [
+                                        {
+                                            "id": 0,
+                                            "type": "schema",
+                                            "data": "PromptInput"
+                                        },
+                                        {
+                                            "id": 1,
+                                            "type": "runnable",
+                                            "data": {
+                                                "id": [
+                                                    "langchain",
+                                                    "prompts",
+                                                    "prompt",
+                                                    "PromptTemplate"
+                                                ],
+                                                "name": "PromptTemplate"
+                                            }
+                                        },
+                                        {
+                                            "id": 2,
+                                            "type": "schema",
+                                            "data": "PromptTemplateOutput"
+                                        }
+                                    ],
+                                    "edges": [
+                                        {
+                                            "source": 0,
+                                            "target": 1
+                                        },
+                                        {
+                                            "source": 1,
+                                            "target": 2
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "AIMessagePromptTemplate"
+                        ],
+                        "kwargs": {
+                            "prompt": {
+                                "lc": 1,
+                                "type": "constructor",
+                                "id": [
+                                    "langchain",
+                                    "prompts",
+                                    "prompt",
+                                    "PromptTemplate"
+                                ],
+                                "kwargs": {
+                                    "input_variables": [],
+                                    "template": "I'm doing well, thanks!",
+                                    "template_format": "f-string"
+                                },
+                                "name": "PromptTemplate",
+                                "graph": {
+                                    "nodes": [
+                                        {
+                                            "id": 0,
+                                            "type": "schema",
+                                            "data": "PromptInput"
+                                        },
+                                        {
+                                            "id": 1,
+                                            "type": "runnable",
+                                            "data": {
+                                                "id": [
+                                                    "langchain",
+                                                    "prompts",
+                                                    "prompt",
+                                                    "PromptTemplate"
+                                                ],
+                                                "name": "PromptTemplate"
+                                            }
+                                        },
+                                        {
+                                            "id": 2,
+                                            "type": "schema",
+                                            "data": "PromptTemplateOutput"
+                                        }
+                                    ],
+                                    "edges": [
+                                        {
+                                            "source": 0,
+                                            "target": 1
+                                        },
+                                        {
+                                            "source": 1,
+                                            "target": 2
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                            "langchain",
+                            "prompts",
+                            "chat",
+                            "HumanMessagePromptTemplate"
+                        ],
+                        "kwargs": {
+                            "prompt": {
+                                "lc": 1,
+                                "type": "constructor",
+                                "id": [
+                                    "langchain",
+                                    "prompts",
+                                    "prompt",
+                                    "PromptTemplate"
+                                ],
+                                "kwargs": {
+                                    "input_variables": [
+                                        "user_input"
+                                    ],
+                                    "template": "{user_input}",
+                                    "template_format": "f-string"
+                                },
+                                "name": "PromptTemplate",
+                                "graph": {
+                                    "nodes": [
+                                        {
+                                            "id": 0,
+                                            "type": "schema",
+                                            "data": "PromptInput"
+                                        },
+                                        {
+                                            "id": 1,
+                                            "type": "runnable",
+                                            "data": {
+                                                "id": [
+                                                    "langchain",
+                                                    "prompts",
+                                                    "prompt",
+                                                    "PromptTemplate"
+                                                ],
+                                                "name": "PromptTemplate"
+                                            }
+                                        },
+                                        {
+                                            "id": 2,
+                                            "type": "schema",
+                                            "data": "PromptTemplateOutput"
+                                        }
+                                    ],
+                                    "edges": [
+                                        {
+                                            "source": 0,
+                                            "target": 1
+                                        },
+                                        {
+                                            "source": 1,
+                                            "target": 2
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "name": "ChatPromptTemplate",
+            "graph": {
+                "nodes": [
+                    {
+                        "id": 0,
+                        "type": "schema",
+                        "data": "PromptInput"
+                    },
+                    {
+                        "id": 1,
+                        "type": "runnable",
+                        "data": {
+                            "id": [
+                                "langchain",
+                                "prompts",
+                                "chat",
+                                "ChatPromptTemplate"
+                            ],
+                            "name": "ChatPromptTemplate"
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "type": "schema",
+                        "data": "ChatPromptTemplateOutput"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": 0,
+                        "target": 1
+                    },
+                    {
+                        "source": 1,
+                        "target": 2
+                    }
+                ]
+            }
+        },
+        "middle": [
+            {
+                "lc": 1,
+                "type": "constructor",
+                "id": [
+                    "langchain",
+                    "chat_models",
+                    "openai",
+                    "ChatOpenAI"
+                ],
+                "kwargs": {
+                    "model_name": "gpt-4o",
+                    "temperature": 0.0,
+                    "openai_api_key": {
+                        "lc": 1,
+                        "type": "secret",
+                        "id": [
+                            "OPENAI_API_KEY"
+                        ]
+                    },
+                    "openai_proxy": "",
+                    "max_retries": 2,
+                    "n": 1,
+                    "max_tokens": 100
+                },
+                "name": "ChatOpenAI",
+                "graph": {
+                    "nodes": [
+                        {
+                            "id": 0,
+                            "type": "schema",
+                            "data": "ChatOpenAIInput"
+                        },
+                        {
+                            "id": 1,
+                            "type": "runnable",
+                            "data": {
+                                "id": [
+                                    "langchain",
+                                    "chat_models",
+                                    "openai",
+                                    "ChatOpenAI"
+                                ],
+                                "name": "ChatOpenAI"
+                            }
+                        },
+                        {
+                            "id": 2,
+                            "type": "schema",
+                            "data": "ChatOpenAIOutput"
+                        }
+                    ],
+                    "edges": [
+                        {
+                            "source": 0,
+                            "target": 1
+                        },
+                        {
+                            "source": 1,
+                            "target": 2
+                        }
+                    ]
+                }
+            }
+        ],
+        "last": {
+            "lc": 1,
+            "type": "constructor",
+            "id": [
+                "langchain",
+                "schema",
+                "output_parser",
+                "StrOutputParser"
+            ],
+            "kwargs": {},
+            "name": "StrOutputParser",
+            "graph": {
+                "nodes": [
+                    {
+                        "id": 0,
+                        "type": "schema",
+                        "data": "StrOutputParserInput"
+                    },
+                    {
+                        "id": 1,
+                        "type": "runnable",
+                        "data": {
+                            "id": [
+                                "langchain",
+                                "schema",
+                                "output_parser",
+                                "StrOutputParser"
+                            ],
+                            "name": "StrOutputParser"
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "type": "schema",
+                        "data": "StrOutputParserOutput"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": 0,
+                        "target": 1
+                    },
+                    {
+                        "source": 1,
+                        "target": 2
+                    }
+                ]
+            }
+        }
+    },
+    "name": "RunnableSequence",
+    "graph": {
+        "nodes": [
+            {
+                "id": 0,
+                "type": "schema",
+                "data": "PromptInput"
+            },
+            {
+                "id": 1,
+                "type": "runnable",
+                "data": {
+                    "id": [
+                        "langchain",
+                        "prompts",
+                        "chat",
+                        "ChatPromptTemplate"
+                    ],
+                    "name": "ChatPromptTemplate"
+                }
+            },
+            {
+                "id": 2,
+                "type": "runnable",
+                "data": {
+                    "id": [
+                        "langchain",
+                        "chat_models",
+                        "openai",
+                        "ChatOpenAI"
+                    ],
+                    "name": "ChatOpenAI"
+                }
+            },
+            {
+                "id": 3,
+                "type": "runnable",
+                "data": {
+                    "id": [
+                        "langchain",
+                        "schema",
+                        "output_parser",
+                        "StrOutputParser"
+                    ],
+                    "name": "StrOutputParser"
+                }
+            },
+            {
+                "id": 4,
+                "type": "schema",
+                "data": "StrOutputParserOutput"
+            }
+        ],
+        "edges": [
+            {
+                "source": 0,
+                "target": 1
+            },
+            {
+                "source": 1,
+                "target": 2
+            },
+            {
+                "source": 3,
+                "target": 4
+            },
+            {
+                "source": 2,
+                "target": 3
+            }
+        ]
+    }
+}
