@@ -1,9 +1,0 @@
-langchain_core
-langchain_community
-langchain_openai 
-langchain_chroma
-wikipedia
-python-dotenv
-
-langfuse
-torch
