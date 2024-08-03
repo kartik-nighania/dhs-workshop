@@ -4,6 +4,6 @@ langchain_openai
 langchain_chroma
 wikipedia
 python-dotenv
+pydantic==2.6.1
 
 langfuse
-torch
