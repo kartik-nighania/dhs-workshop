@@ -1,0 +1,23 @@
+# launched on g5.xlarge
+services:
+  lorax:
+    container_name: lorax
+    image: ghcr.io/predibase/lorax:main
+    volumes:
+      - ./data:/data
+    ports:
+      - "8000:8000"
+    devices:
+      - /dev/nvidiactl
+      - /dev/nvidia-uvm
+      - /dev/nvidia-uvm-tools
+      - /dev/nvidia0
+    shm_size: 1g
+    environment:
+      NVIDIA_VISIBLE_DEVICES: all
+      HUGGING_FACE_HUB_TOKEN: ${HF_TOKEN}
+      MODEL_ID: mistralai/Mistral-7B-Instruct-v0.1
+      MAX_BATCH_TOTAL_TOKENS: 4096
+      MAX_CONCURRENT_REQUESTS: 256
+      PORT: 8000
+    restart: always

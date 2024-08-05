@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: huggingface-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: huggingface
+  template:
+    metadata:
+      labels:
+        app: huggingface
+    spec:
+      containers:
+      - name: huggingface-container
+        image: vllm/vllm-openai:latest
+        args: ["--model", "mistralai/Mistral-7B-v0.1"]
+        ports:
+        - containerPort: 8000
+        env:
+        - name: HUGGING_FACE_HUB_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: huggingface-secret
+              key: HUGGING_FACE_HUB_TOKEN
+        volumeMounts:
+        - name: cache-volume
+          mountPath: /root/.cache/huggingface
+        securityContext:
+          ipcMode: "Host"
+        resources:
+          limits:
+            nvidia.com/gpu: 1
+      volumes:
+      - name: cache-volume
+        hostPath:
+          path: /home/$(USER)/.cache/huggingface
+          type: Directory
