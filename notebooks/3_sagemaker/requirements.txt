@@ -1,9 +1,0 @@
-torch
-tensorboard
-transformers
-datasets
-accelerate
-evaluate
-bitsandbytes
-trl
-peft
