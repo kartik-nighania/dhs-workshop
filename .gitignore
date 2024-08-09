@@ -2,6 +2,7 @@ venv
 test
 */*/.env
 */*/.env.txt
+notebooks/3_sagemaker/2_pipelines/data/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
