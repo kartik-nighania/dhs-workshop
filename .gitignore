@@ -3,6 +3,8 @@ test
 */*/.env
 */*/.env.txt
 notebooks/3_sagemaker/2_pipelines/data/*
+workshop/user_credentials.csv
+workshop/load_testing/data
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
