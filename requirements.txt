@@ -1,9 +1,12 @@
-langchain_core
-langchain_community
-langchain_openai 
-langchain_chroma
-wikipedia
-python-dotenv
-pydantic==2.6.1
+langchain-core==0.3.15
+langchain-community==0.3.5
+langchain-openai==0.2.6
+langchain-chroma==0.1.4
+wikipedia==1.4.0
 
-langfuse
+python-dotenv==1.0.1
+pydantic==2.9.2
+
+langfuse==2.53.8
+
+boto3==1.35.54

@@ -9,6 +9,9 @@ workshop/load_testing/data
 /notebooks/4_eks/setup/eksctl
 /notebooks/3_sagemaker/1_training_script_mode/tmp/*
 
+notes.txt
+private/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
